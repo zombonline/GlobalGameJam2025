@@ -318,6 +318,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1809338474}
     m_Modifications:
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4552527940237449660, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3286420888022219146, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
       propertyPath: m_Name
       value: Player UI Card (2)
@@ -420,6 +432,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1809338474}
     m_Modifications:
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4552527940237449660, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3286420888022219146, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
       propertyPath: m_Name
       value: Player UI Card (1)
@@ -660,6 +684,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1809338474}
     m_Modifications:
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4552527940237449660, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3286420888022219146, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
       propertyPath: m_Name
       value: Player UI Card (6)
@@ -762,6 +798,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1809338474}
     m_Modifications:
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4552527940237449660, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3286420888022219146, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
       propertyPath: m_Name
       value: Player UI Card (3)
@@ -1168,6 +1216,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1809338474}
     m_Modifications:
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4552527940237449660, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3286420888022219146, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
       propertyPath: m_Name
       value: Player UI Card (7)
@@ -1533,6 +1593,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1809338474}
     m_Modifications:
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4552527940237449660, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3286420888022219146, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
       propertyPath: m_Name
       value: Player UI Card (5)
@@ -1635,6 +1707,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1809338474}
     m_Modifications:
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4552527940237449660, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3286420888022219146, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
       propertyPath: m_Name
       value: Player UI Card (4)
@@ -1737,6 +1821,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1809338474}
     m_Modifications:
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4552527940237449660, guid: 1ca554173ba0372468510f8c6d78dfff, type: 2}
+    - target: {fileID: 1153291321380888000, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3286420888022219146, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
       propertyPath: m_Name
       value: Player UI Card
