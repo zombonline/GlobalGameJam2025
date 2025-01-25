@@ -9,7 +9,7 @@ public class DamageDoer : MonoBehaviour
 {
     [SerializeField] private float damage = 100f;
 
-    [SerializeField] string[] tagsCanDamage;
+    [SerializeField] string[] tagsCanDamage, tagsCanEffect;
 
 
 
@@ -21,5 +21,13 @@ public class DamageDoer : MonoBehaviour
             health.TakeDamage(damage);
 
         }
+        if(tagsCanEffect.Contains<string>(collision.gameObject.tag))
+        {
+            if(collision.gameObject.tag == "Spike")
+            {
+                collision.gameObject.GetComponent<SpikeMovement>().SetTempCooldown(2f);
+            }
+        }
+
     }
 }

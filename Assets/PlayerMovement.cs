@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     protected Vector2 movementDir;
     protected Rigidbody2D rb;
 
+    protected Vector2 velocityLastFrame;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -30,5 +32,10 @@ public class PlayerMovement : MonoBehaviour
         fire.Disable();
     }
 
-    
+    protected void GetVelocityLastFrame()
+    {
+        velocityLastFrame = rb.linearVelocity;
+    }
+
+
 }

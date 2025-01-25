@@ -16,7 +16,7 @@ public class SpikeMovement : PlayerMovement
     private float cooldownTimer = 0f;
 
 
-    [SerializeField] Image cooldownImageFill, cooldownImageBack;
+    [SerializeField] Image chargeImageFill, chargeImageBackground;
     private void Update()
     {
         Aim(move.ReadValue<Vector2>());
@@ -24,7 +24,7 @@ public class SpikeMovement : PlayerMovement
         {
             Fire();
         }
-        if (fire.WasReleasedThisFrame())
+        if (fire.WasReleasedThisFrame() && cooldownTimer <= 0)
         {
             if(moveChargeValue > pressLength)
             {
@@ -39,17 +39,19 @@ public class SpikeMovement : PlayerMovement
             }
             moveChargeValue = 0f;
             cooldownTimer = cooldownBetweenCharges;
-            cooldownImageFill.fillAmount = 0f;
+            chargeImageFill.fillAmount = 0f;
         }
         cooldownTimer -= Time.deltaTime;
         if(cooldownTimer <= 0)
         {
-            cooldownImageBack.color = new Color(46f,46f,46f, 0.5f);
+            chargeImageBackground.color = new Color(46f,46f,46f, 0.5f);
         }
         else
         {
-            cooldownImageBack.color = Color.red;
+            chargeImageBackground.color = Color.red;
         }
+
+        GetVelocityLastFrame();
     }
     private void Aim(Vector2 val)
     {
@@ -59,7 +61,7 @@ public class SpikeMovement : PlayerMovement
     private void Fire()
     {
         moveChargeValue += Time.deltaTime;
-        cooldownImageFill.fillAmount = moveChargeValue / pressLength;
+        chargeImageFill.fillAmount = moveChargeValue / pressLength;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -68,5 +70,16 @@ public class SpikeMovement : PlayerMovement
         {
             rb.linearVelocity = Vector2.zero;
         }
+        if(collision.gameObject.CompareTag("Wall Breakable"))
+        {
+            Destroy(collision.gameObject);
+            rb.linearVelocity = velocityLastFrame;
+        }
+    }
+    public void SetTempCooldown(float val)
+    {
+        chargeImageFill.fillAmount = 0f;
+        chargeImageBackground.color = Color.red;
+        cooldownTimer = val;
     }
 }

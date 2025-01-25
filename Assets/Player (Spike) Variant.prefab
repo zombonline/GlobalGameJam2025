@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 965536227109913393}
   - component: {fileID: 5927248528288516389}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 6978697925284478211}
   - component: {fileID: 6480409056021490239}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -470,8 +470,8 @@ MonoBehaviour:
   moveForce: 75
   partialChargeMovementEffector: 0.4
   cooldownBetweenCharges: 1
-  cooldownImageFill: {fileID: 5927248528288516389}
-  cooldownImageBack: {fileID: 6480409056021490239}
+  chargeImageFill: {fileID: 5927248528288516389}
+  chargeImageBackground: {fileID: 6480409056021490239}
 --- !u!114 &4628132797316305092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,6 +487,8 @@ MonoBehaviour:
   damage: 100
   tagsCanDamage:
   - Bubble
+  tagsCanEffect:
+  - Spike
 --- !u!114 &8369780090363763624
 MonoBehaviour:
   m_ObjectHideFlags: 0

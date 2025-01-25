@@ -10,12 +10,13 @@ public class LevelManager : MonoBehaviour
     [SerializeField] Level[] levels;
     PlayerInputManager inputManager;
     Level currentLevel;
-    Timer timer;
-    [SerializeField] ScoreDisplay scoreDisplay;
+    [SerializeField] Timer timer;
+    [SerializeField] WinCounter winCounterSpike, winCounterBubble;
     private void Awake()
     {
         inputManager = GetComponent<PlayerInputManager>();
-        timer = GetComponent<Timer>();
+        winCounterBubble.SetMax(SessionManager.GetRequiredWins());
+        winCounterSpike.SetMax(SessionManager.GetRequiredWins());
         LoadLevel(Instantiate(levels[Random.Range(0, levels.Length)]));
     }
     private void OnEnable()
@@ -25,10 +26,6 @@ public class LevelManager : MonoBehaviour
     private void OnDisable()
     {
         timer.onTimerComplete -= LevelTimeUp;
-    }
-    private void Start()
-    {
-        SpawnPlayers();
     }
     private void SpawnPlayers()
     {
@@ -75,7 +72,6 @@ public class LevelManager : MonoBehaviour
     {
         CheckRemainingPlayersInLevelByTag(player.tag);
     }
-
     private void CheckRemainingPlayersInLevelByTag(string tag)
     {
         Debug.Log("Checking remaining players with tag " + tag);
@@ -93,24 +89,28 @@ public class LevelManager : MonoBehaviour
             LevelOver();
         }
     }
-
     private void LevelTimeUp()
     {
         SessionManager.AddBubbleWin();
         LevelOver();
     }
-
     private void LevelOver()
     {
-        scoreDisplay.UpdateDisplay();
+        winCounterSpike.UpdateCounter(SessionManager.GetSpikeWins());
+        winCounterBubble.UpdateCounter(SessionManager.GetBubbleWins());
         DespawnPlayers();
         Destroy(currentLevel.gameObject);
+        if(SessionManager.GetBubbleWins() >= SessionManager.GetRequiredWins() || SessionManager.GetSpikeWins() >= SessionManager.GetRequiredWins())
+        {
+            SceneManager.LoadScene("Game Over");
+            return;
+        }
         LoadLevel(Instantiate(levels[Random.Range(0, levels.Length)]));
     }
-
     private void LoadLevel(Level level)
     {
         currentLevel = level;
+
         timer.SetTime(currentLevel.timeLimit);
         Debug.Log("Timer set to " + currentLevel.timeLimit);
         timer.StartTimer();

@@ -11,14 +11,12 @@ public class Level : MonoBehaviour
 
     [SerializeField] Camera mainCamera;
     [SerializeField] Transform outerWalls;
+    [SerializeField] SpriteRenderer background;
     [ExecuteInEditMode]
-
     private void OnValidate()
     {
         mainCamera.orthographicSize = levelScale;
         outerWalls.localScale = new Vector3(levelScale,levelScale,1);
-
+        background.size = new Vector2(4f*levelScale, 4f*levelScale);
     }
-
-
 }
