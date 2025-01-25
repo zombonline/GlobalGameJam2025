@@ -22,7 +22,7 @@ public class BubbleMovement : PlayerMovement
 
     private void Fire()
     {
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         rb.AddForce(movementDir * moveForce, ForceMode2D.Impulse);
         Debug.Log("Fire");
     }
