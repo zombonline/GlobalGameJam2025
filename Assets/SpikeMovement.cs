@@ -28,13 +28,13 @@ public class SpikeMovement : PlayerMovement
         {
             if(moveChargeValue > pressLength)
             {
-                rb.velocity = Vector2.zero;
+                rb.linearVelocity = Vector2.zero;
                 rb.AddForce(movementDir * moveForce, ForceMode2D.Impulse);
             }
             else
             {
                 float partialCharValue = moveChargeValue / pressLength;
-                rb.velocity = Vector2.zero;
+                rb.linearVelocity = Vector2.zero;
                 rb.AddForce(movementDir * moveForce * partialChargeMovementEffector * partialCharValue, ForceMode2D.Impulse);
             }
             moveChargeValue = 0f;
@@ -66,7 +66,7 @@ public class SpikeMovement : PlayerMovement
     {
         if(collision.gameObject.CompareTag("Wall"))
         {
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
         }
     }
 }
