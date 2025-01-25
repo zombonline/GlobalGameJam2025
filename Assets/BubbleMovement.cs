@@ -26,4 +26,11 @@ public class BubbleMovement : PlayerMovement
         rb.AddForce(movementDir * moveForce, ForceMode2D.Impulse);
         Debug.Log("Fire");
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Wall (Passable)"))
+        {
+
+        }
+    }
 }
