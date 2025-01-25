@@ -230,8 +230,8 @@ MonoBehaviour:
   - {fileID: 2009995435}
   - {fileID: 936671679}
   - {fileID: 1449269212}
-  bubbleSprite: {fileID: 21300000, guid: 1ef6233432b707c4694bd24198f4ed3c, type: 3}
-  spikeSprite: {fileID: 21300000, guid: ba98d6e78a1621a4a8a6f96975797369, type: 3}
+  bubbleSprite: {fileID: 7110674810989473860, guid: d3531e85aee759449b51eb119a8491d6, type: 3}
+  spikeSprite: {fileID: 7560975059316063060, guid: c6609f0f7ef9d224da577f84c4a384f2, type: 3}
   prefabs:
   - {fileID: 5049850731291195920, guid: a9ddc7464b9ded54ab3dc7c6bb97aee6, type: 3}
   - {fileID: 7196898668418648204, guid: 6a0e72fcf555f78448938830162774ae, type: 3}
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1291202924252101130, guid: 0090d752db3f8174e8f3b844e61c4d3e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d94b1d495658ad419354a4aaa7c15a6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1507,7 +1507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4e68931ee4d21c340b6902c9bc4627ea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 740d45317538b5b45af85f848731c37a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
