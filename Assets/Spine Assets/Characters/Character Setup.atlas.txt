@@ -1,0 +1,40 @@
+Character Setup.png
+	size: 241, 536
+	filter: Linear, Linear
+	pma: true
+Bubbles
+	bounds: 134, 429, 105, 105
+Charge_Face_01
+	bounds: 117, 222, 107, 81
+Charge_Face_02
+	bounds: 188, 136, 84, 48
+	rotate: 90
+Excited to Pop S
+	bounds: 2, 230, 113, 82
+Idle_Face_01 B
+	bounds: 2, 60, 83, 86
+	rotate: 90
+Idle_Face_01 S
+	bounds: 96, 137, 83, 90
+	rotate: 90
+Idle_Face_02
+	bounds: 90, 70, 84, 65
+Idle_Face_03
+	bounds: 2, 18, 82, 40
+Lose Face
+	bounds: 90, 2, 74, 66
+Movement Angry Face S
+	bounds: 134, 305, 122, 87
+	rotate: 90
+Movement Close Eyes B
+	bounds: 176, 57, 77, 41
+	rotate: 90
+Spike
+	bounds: 2, 405, 129, 130
+	rotate: 90
+Win Face
+	bounds: 2, 314, 89, 115
+	rotate: 90
+Worried B
+	bounds: 2, 145, 83, 92
+	rotate: 90
