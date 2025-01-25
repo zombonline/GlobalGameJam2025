@@ -8,6 +8,15 @@ public class LobbyPlayer : MonoBehaviour
     [SerializeField] public PlayerInput playerInput;
 
     private InputAction teamSwap;
+
+    private void Awake()
+    {
+        if(FindObjectOfType<LobbyManager>() == null)
+        {
+            return;
+        }
+        GetComponentInChildren<Collider2D>().enabled = false;
+    }
     private void OnEnable()
     {
         teamSwap = playerInput.actions["TeamSwap"];
