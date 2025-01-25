@@ -13,7 +13,7 @@ using UnityEngine.UI;
 
 public class LobbyManager : MonoBehaviour
 {
-    [SerializeField] RectTransform[] players;
+    [SerializeField] RectTransform[] playerUIElements;
     [SerializeField] Sprite bubbleSprite, spikeSprite;
 
     [SerializeField] GameObject[] prefabs;
@@ -22,11 +22,11 @@ public class LobbyManager : MonoBehaviour
     {
         Debug.Log("Player joined: " + playerInput.playerIndex);
         
-        players[playerInput.playerIndex].Find("Player Name").GetComponentInChildren<TextMeshProUGUI>().text = "Player " + playerInput.playerIndex.ToString();
+        playerUIElements[playerInput.playerIndex].Find("Player Name").GetComponentInChildren<TextMeshProUGUI>().text = "Player " + playerInput.playerIndex.ToString();
         if(playerInput.CompareTag("Bubble"))
-            players[playerInput.playerIndex].Find("Player Image").GetComponentInChildren<Image>().sprite = bubbleSprite;
+            playerUIElements[playerInput.playerIndex].Find("Player Image").GetComponentInChildren<Image>().sprite = bubbleSprite;
         else
-            players[playerInput.playerIndex].Find("Player Image").GetComponentInChildren<Image>().sprite = spikeSprite;
+            playerUIElements[playerInput.playerIndex].Find("Player Image").GetComponentInChildren<Image>().sprite = spikeSprite;
 
         SessionManager.AddPlayer(new PlayerData
         {
@@ -60,5 +60,11 @@ public class LobbyManager : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
         Destroy(player);
+    }
+
+    public void TogglePlayerReady(PlayerInput player, bool val)
+    {
+
+        playerUIElements[player.playerIndex].Find("Ready Image").GetComponentInChildren<Image>().enabled = val;    
     }
 }

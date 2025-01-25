@@ -13,8 +13,7 @@ public class PlayerData
 }
 public static class SessionManager 
 {
-    public static List<PlayerData> players = new List<PlayerData>();
-
+    private static List<PlayerData> players = new List<PlayerData>();
     public static void AddPlayer(PlayerData player)
     {
         foreach (var p in players)
@@ -32,5 +31,29 @@ public static class SessionManager
     public static void RemovePlayer(PlayerData player)
     {
         players.Remove(player);
+    }
+
+    public static List<PlayerData> GetPlayers()
+    {
+        return players;
+    }
+
+    private static int bubbleWins = 0, spikeWins = 0;
+    public static void AddBubbleWin()
+    {
+        bubbleWins++;
+    }
+    public static void AddSpikeWin()
+    {
+        spikeWins++;
+    }
+
+    public static int GetBubbleWins()
+    {
+        return bubbleWins;
+    }
+    public static int GetSpikeWins()
+    {
+        return spikeWins;
     }
 }

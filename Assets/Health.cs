@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,7 +9,9 @@ public class Health : MonoBehaviour
     private float health = 100f;
 
 
-    [SerializeField] UnityEvent onDeath;
+    public delegate void DeathDelegate(GameObject gameObject);
+    public event DeathDelegate onDeath;
+
 
     public void TakeDamage(float damage)
     {
@@ -20,6 +23,7 @@ public class Health : MonoBehaviour
     }
     public void Die()
     {
+        onDeath?.Invoke(this.gameObject);
         Destroy(gameObject);
     }
 }

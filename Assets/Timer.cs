@@ -8,21 +8,19 @@ public class Timer : MonoBehaviour
     float currentTime = 0f;
     bool isRunning = false;
     public delegate void TimerCompleteDelegate();
-    public static event TimerCompleteDelegate timerComplete;
+    public event TimerCompleteDelegate onTimerComplete;
 
 
     [SerializeField] private TextMeshProUGUI textTime;
     private void Update()
     {
         DisplayTime();
-        if (!isRunning) return;
-
+        if (!isRunning) { return; }
         currentTime -= Time.deltaTime;
         if (currentTime <= 0)
         {
-            timerComplete?.Invoke();
-            currentTime = 0;
             isRunning = false;
+            onTimerComplete?.Invoke();
         }
     }
 
@@ -34,9 +32,9 @@ public class Timer : MonoBehaviour
     {
         isRunning = true;
     }
-    public void PauseTimer(bool val)
+    public void PauseTimer()
     {
-        isRunning = val;
+        isRunning = false;
     }
 
     public void DisplayTime()

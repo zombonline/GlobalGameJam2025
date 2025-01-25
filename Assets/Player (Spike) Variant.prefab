@@ -49,6 +49,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -430,6 +433,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2026312762014352015, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4628132797316305092}
+    - targetCorrespondingSourceObject: {fileID: 2026312762014352015, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8369780090363763624}
   m_SourcePrefab: {fileID: 100100000, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
 --- !u!114 &648526112032351348 stripped
 MonoBehaviour:
@@ -481,6 +487,18 @@ MonoBehaviour:
   damage: 100
   tagsCanDamage:
   - Bubble
+--- !u!114 &8369780090363763624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7196898668418648204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f9d53b1dd00fa44c88488a6c30fa62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7378584495205220535 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1845229055223138996, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
