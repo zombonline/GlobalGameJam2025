@@ -217,7 +217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3997196375426620687, guid: 99533eb3799bbbf43b8ebbb04e5a191f, type: 3}
       propertyPath: m_Name
-      value: Wall Spikes Variant Variant
+      value: Wall Spikes one side
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

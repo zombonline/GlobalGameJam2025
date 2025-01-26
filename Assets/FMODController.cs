@@ -3,5 +3,10 @@ using FMOD;
 using FMODUnity;
 public class FMODController : MonoBehaviour
 {
-    [SerializeField] FMODStudioEventEmitter fmodEmitter;
+    [SerializeField] StudioEventEmitter fmodEmitter;
+
+    public void UpdateState(string name)
+    {
+        fmodEmitter.Play();
+    }
 }
