@@ -1,19 +1,24 @@
+using Spine.Unity;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
 public class WinScreen : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI winText;
+    [SerializeField] SkeletonGraphic winnerGraphic;
 
-    private void Awake()
+    private IEnumerator Start()
     {
-        if(SessionManager.GetWins(Team.Bubble) >= SessionManager.GetRequiredWins())
+        yield return new WaitForSeconds(2f);
+        if (SessionManager.GetWins(Team.Bubble) >= SessionManager.GetRequiredWins())
         {
-            winText.text = "Bubbles Win!";
+            winnerGraphic.Skeleton.SetSkin("Bubble Wins");
         }
         else
         {
-            winText.text = "Spikes Win!";
+            winnerGraphic.Skeleton.SetSkin("Spike Wins");
         }
+        winnerGraphic.freeze = false;
+        winnerGraphic.AnimationState.SetAnimation(0, "animation", false);
     }
 }

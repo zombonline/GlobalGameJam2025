@@ -14,8 +14,7 @@ using UnityEngine.UI;
 
 public class LobbyManager : MonoBehaviour
 {
-    [SerializeField] RectTransform[] playerUIElements;
-    [SerializeField] Sprite bubbleSprite, spikeSprite, cardActive, cardUnactive;
+    [SerializeField] LobbyPlayerUI[] playerUIElements;
     PlayerInputManager playerInputManager;
     [SerializeField] GameObject[] prefabs;
     int currentPrefab;
@@ -44,28 +43,21 @@ public class LobbyManager : MonoBehaviour
             playerInputManager.JoinPlayer(player.playerIndex, -1, player.controlScheme, player.devices);
         }
     }
-    private void DisplayPlayer(PlayerInput playerInput)
-    {
-        //playerUIElements[playerInput.playerIndex].GetComponent<SpriteRenderer>().sprite = cardActive;
-        playerUIElements[playerInput.playerIndex].Find("Player Name").GetComponentInChildren<TextMeshProUGUI>().text = "Player " + (playerInput.playerIndex+1).ToString();
-        if (playerInput.CompareTag("Bubble"))
-            playerUIElements[playerInput.playerIndex].Find("Player Image").GetComponentInChildren<Image>().sprite = bubbleSprite;
-        else
-            playerUIElements[playerInput.playerIndex].Find("Player Image").GetComponentInChildren<Image>().sprite = spikeSprite;
-    }
     private void AddPlayerToSession(PlayerInput playerInput)
     {
-        SessionManager.AddPlayer(new PlayerData
+        var newPlayer = new PlayerData
         {
             playerIndex = playerInput.playerIndex,
             controlScheme = playerInput.currentControlScheme,
             devices = playerInput.devices.ToArray(),
-            prefab = GetComponent<PlayerInputManager>().playerPrefab
-        });
+            prefab = GetComponent<PlayerInputManager>().playerPrefab,
+            team = GetComponent<PlayerInputManager>().playerPrefab.tag == "Bubble" ? Team.Bubble : Team.Spike
+        };
+        SessionManager.AddPlayer(newPlayer);
+        playerUIElements[playerInput.playerIndex].SetPlayer(newPlayer);
     }
     private void OnPlayerJoined(PlayerInput playerInput)
     {
-        DisplayPlayer(playerInput);
         AddPlayerToSession(playerInput);
         CheckCanStart();
     }
@@ -89,7 +81,7 @@ public class LobbyManager : MonoBehaviour
     }
     public void TogglePlayerReady(PlayerInput player, bool val)
     {
-        playerUIElements[player.playerIndex].Find("Ready Image").GetComponentInChildren<Image>().enabled = val; 
+        playerUIElements[player.playerIndex].SetReadyDisplay(val);
         CheckCanStart();
     }
     public bool CheckAllPlayersReady()

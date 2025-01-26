@@ -140,7 +140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7110674810989473860, guid: d3531e85aee759449b51eb119a8491d6, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -162,7 +162,6 @@ GameObject:
   - component: {fileID: 7394489095854294359}
   - component: {fileID: 1859642688950383176}
   - component: {fileID: 6038990202897932305}
-  - component: {fileID: 7440682945318810549}
   m_Layer: 5
   m_Name: Player UI Card
   m_TagString: Untagged
@@ -212,9 +211,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6082693a933ca2429c201e17b607469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamImage: {fileID: 0}
-  playerNameText: {fileID: 0}
-  readyText: {fileID: 0}
+  teamImage: {fileID: 113110418774969128}
+  bubble: {fileID: -5712959122012955994, guid: 23e014d46ce0caa48bce32bf53af1d9d, type: 3}
+  spike: {fileID: -5159362228428509745, guid: b29de375a6e38fd4892cd8709cd9d2fe, type: 3}
+  playerNameText: {fileID: 1153291321380888000}
+  readyImage: {fileID: 1765211619397262990}
+  cardEnabled: {fileID: 21300000, guid: fe066a2071ab76447b2fae504e2512aa, type: 3}
+  cardDisabled: {fileID: 21300000, guid: 09a9a21bbeeba1445b0bd2f7865aaf1d, type: 3}
 --- !u!114 &6038990202897932305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,18 +248,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7440682945318810549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3286420888022219146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62c243bc699c41c4a93b6611fa607813, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5120355378167337934
 GameObject:
   m_ObjectHideFlags: 0

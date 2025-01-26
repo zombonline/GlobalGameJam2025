@@ -11,6 +11,7 @@ public class PlayerData
     public string controlScheme;
     public InputDevice[] devices;
     public GameObject prefab;
+    public Team team;
 }
 public static class SessionManager 
 {
@@ -25,7 +26,6 @@ public static class SessionManager
                 break;
             }
         }
-
         Debug.Log(player.prefab.name + " added to players list");
         players.Add(player);
     }

@@ -96,6 +96,7 @@ public class LevelManager : MonoBehaviour
         TogglePlayerHealth();
         PlayerWinLoseAnimations(winningTeam);
         yield return new WaitForSeconds(3);
+        levelTransition.freeze = false;
         levelTransition.AnimationState.ClearTracks();
         levelTransition.AnimationState.SetAnimation(0, "animation", false);
         yield return new WaitForSpineEvent(levelTransition.AnimationState, "Scene Change");
