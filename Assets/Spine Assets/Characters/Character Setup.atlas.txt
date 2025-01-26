@@ -1,149 +1,114 @@
 Character Setup.png
-	size: 7690, 4928
+	size: 633, 5921
 	filter: Linear, Linear
 	pma: true
 Bubbles
-	bounds: 3400, 4801, 125, 125
+	bounds: 154, 87, 125, 123
+	offsets: 0, 2, 125, 125
 Charge_Face_01
-	bounds: 3400, 4718, 107, 81
+	bounds: 495, 58, 107, 81
 Charge_Face_02
-	bounds: 3639, 4702, 84, 48
+	bounds: 466, 8, 84, 48
 Excited to Pop S
-	bounds: 3527, 4755, 113, 82
+	bounds: 495, 141, 113, 82
 Idle_Face_01 B
-	bounds: 3509, 4670, 83, 86
+	bounds: 124, 2, 83, 86
 	rotate: 90
 Idle_Face_01 S
-	bounds: 3736, 4689, 83, 90
+	bounds: 374, 23, 83, 90
 	rotate: 90
 Idle_Face_02
-	bounds: 3768, 4842, 84, 65
-	rotate: 90
+	bounds: 2, 7, 84, 65
 Idle_Face_03
-	bounds: 3597, 4671, 82, 40
-	rotate: 90
+	bounds: 280, 7, 82, 40
 Lose Face
-	bounds: 3768, 4774, 74, 66
+	bounds: 212, 11, 74, 66
+	rotate: 90
 Movement Angry Face S
-	bounds: 3527, 4839, 122, 87
+	bounds: 280, 134, 122, 87
 Movement Close Eyes B
-	bounds: 3639, 4659, 77, 41
-Sequence/Pop_Death00
-	bounds: 2, 3006, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death01
-	bounds: 2, 1084, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death02
-	bounds: 2, 2, 1920, 1080
-Sequence/Pop_Death03
-	bounds: 1084, 3006, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death04
-	bounds: 1084, 1084, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death05
-	bounds: 1924, 2, 1920, 1080
-Sequence/Pop_Death06
-	bounds: 3846, 3846, 1920, 1080
-Sequence/Pop_Death07
-	bounds: 2166, 3006, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death08
-	bounds: 5768, 3846, 1920, 1080
-Sequence/Pop_Death09
-	bounds: 2166, 1084, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death10
-	bounds: 3248, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death11
-	bounds: 3846, 2, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death12
-	bounds: 4330, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death13
-	bounds: 4928, 2, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death14
-	bounds: 5412, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death15
-	bounds: 6010, 2, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death16
-	bounds: 6010, 2, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death17
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death18
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death19
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death20
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death21
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death22
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death23
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death24
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death25
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death26
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death27
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death28
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death29
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death30
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death31
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death32
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death33
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death34
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death35
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death36
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death37
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
+	bounds: 552, 15, 77, 41
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ00
+	bounds: 2, 225, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ01
+	bounds: 2, 581, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ02
+	bounds: 2, 937, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ03
+	bounds: 2, 1293, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ04
+	bounds: 2, 1649, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ05
+	bounds: 2, 2005, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ06
+	bounds: 2, 2361, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ07
+	bounds: 2, 2717, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ08
+	bounds: 2, 3073, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ09
+	bounds: 2, 3429, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ10
+	bounds: 2, 3785, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ11
+	bounds: 2, 3785, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ12
+	bounds: 2, 4141, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ13
+	bounds: 2, 4497, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ14
+	bounds: 2, 4853, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ15
+	bounds: 2, 5209, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ16
+	bounds: 2, 5209, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ17
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ18
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ19
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ20
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ21
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ22
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ23
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ24
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ25
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ26
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ27
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ28
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ29
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ30
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ31
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ32
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ33
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ34
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ35
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ36
+	bounds: 2, 5565, 629, 354
+Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ37
+	bounds: 2, 5565, 629, 354
 Spike
-	bounds: 3248, 4777, 149, 150
+	bounds: 2, 74, 149, 150
 	rotate: 90
 Win Face
-	bounds: 3651, 4837, 89, 115
-	rotate: 90
+	bounds: 404, 108, 89, 115
 Worried B
-	bounds: 3642, 4752, 83, 92
+	bounds: 280, 49, 83, 92
 	rotate: 90
