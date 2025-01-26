@@ -1,0 +1,12 @@
+skeleton.png
+	size: 1410, 126
+	filter: Linear, Linear
+	pma: true
+Fill Meter
+	bounds: 2, 67, 698, 57
+Frame
+	bounds: 2, 2, 702, 63
+Meter BG
+	bounds: 706, 2, 702, 63
+Shine meter
+	bounds: 702, 67, 698, 57
