@@ -1,0 +1,8 @@
+Bubble Transition.png
+	size: 2133, 1086
+	filter: Linear, Linear
+	pma: true
+Background_3
+	bounds: 2, 2, 1922, 1082
+Bubble@2x
+	bounds: 1926, 879, 205, 205
