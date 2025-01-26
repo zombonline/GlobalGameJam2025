@@ -512,12 +512,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5129889761586794902, guid: 2d3f86c28985de6498a320f846611f0e, type: 3}
       propertyPath: speed
-      value: 2.36
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 5129889761586794902, guid: 2d3f86c28985de6498a320f846611f0e, type: 3}
       propertyPath: objectToMove
       value: 
-      objectReference: {fileID: 1019739536961169650}
+      objectReference: {fileID: 2940722439182282999}
     - target: {fileID: 8891167114894699641, guid: 2d3f86c28985de6498a320f846611f0e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.05
@@ -544,6 +544,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1162261704766330021}
     m_Modifications:
+    - target: {fileID: 4270045748589525342, guid: 09eaaf04eadcdff4cb6c112a9c3b85a8, type: 3}
+      propertyPath: spinRate
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 5131160075006492276, guid: 09eaaf04eadcdff4cb6c112a9c3b85a8, type: 3}
       propertyPath: m_Name
       value: Wheel
@@ -623,6 +627,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1162261704766330021}
     m_Modifications:
+    - target: {fileID: 4270045748589525342, guid: 09eaaf04eadcdff4cb6c112a9c3b85a8, type: 3}
+      propertyPath: spinRate
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 5131160075006492276, guid: 09eaaf04eadcdff4cb6c112a9c3b85a8, type: 3}
       propertyPath: m_Name
       value: Wheel (1)
@@ -641,7 +649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5462578984454433577, guid: 09eaaf04eadcdff4cb6c112a9c3b85a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.5
+      value: 4.11
       objectReference: {fileID: 0}
     - target: {fileID: 5462578984454433577, guid: 09eaaf04eadcdff4cb6c112a9c3b85a8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -687,5 +695,10 @@ PrefabInstance:
 --- !u!4 &2608986303500182954 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5462578984454433577, guid: 09eaaf04eadcdff4cb6c112a9c3b85a8, type: 3}
+  m_PrefabInstance: {fileID: 8068763454700736131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2940722439182282999 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5131160075006492276, guid: 09eaaf04eadcdff4cb6c112a9c3b85a8, type: 3}
   m_PrefabInstance: {fileID: 8068763454700736131}
   m_PrefabAsset: {fileID: 0}
