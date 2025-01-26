@@ -144,13 +144,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60116}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0.0000014603138}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.64644, y: 0.64644, z: 0.64644}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809338474}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 642, y: -492}
@@ -382,10 +382,13 @@ MonoBehaviour:
   - {fileID: 1449269212}
   bubbleSprite: {fileID: 7110674810989473860, guid: d3531e85aee759449b51eb119a8491d6, type: 3}
   spikeSprite: {fileID: 7560975059316063060, guid: c6609f0f7ef9d224da577f84c4a384f2, type: 3}
+  cardActive: {fileID: 0}
+  cardUnactive: {fileID: 0}
   prefabs:
   - {fileID: 5049850731291195920, guid: a9ddc7464b9ded54ab3dc7c6bb97aee6, type: 3}
   - {fileID: 7196898668418648204, guid: 6a0e72fcf555f78448938830162774ae, type: 3}
   winsCounter: {fileID: 1683191978}
+  startButton: {fileID: 1322572362}
 --- !u!1 &599812428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,6 +1777,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 9209815449129721036, guid: 33dd28865d81ccc4196f472938ca5f10, type: 3}
   m_PrefabInstance: {fileID: 4662336166249494950}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1322572362 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5325390322645774664, guid: 33dd28865d81ccc4196f472938ca5f10, type: 3}
+  m_PrefabInstance: {fileID: 4662336166249494950}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322572360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1449269211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2619,6 +2633,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1809338474}
     m_Modifications:
+    - target: {fileID: 5325390322645774664, guid: 33dd28865d81ccc4196f472938ca5f10, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6076512644233384932, guid: 33dd28865d81ccc4196f472938ca5f10, type: 3}
       propertyPath: m_Name
       value: Button Start
@@ -2719,12 +2737,6 @@ PrefabInstance:
     - target: {fileID: 3286420888022219146, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
       propertyPath: m_Name
       value: Player UI Card
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850038374809648718, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
-      propertyPath: m_text
-      value: 'Press        to
-
-        change team'
       objectReference: {fileID: 0}
     - target: {fileID: 8003504516601613483, guid: c8046326cab105e4bb8a623ead27cb46, type: 3}
       propertyPath: m_Pivot.x

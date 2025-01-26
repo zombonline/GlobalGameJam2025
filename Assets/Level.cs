@@ -12,6 +12,8 @@ public class Level : MonoBehaviour
     [SerializeField] Camera mainCamera;
     [SerializeField] Transform outerWalls;
     [SerializeField] SpriteRenderer background;
+
+    public bool levelComplete = false;
     [ExecuteInEditMode]
     private void OnValidate()
     {

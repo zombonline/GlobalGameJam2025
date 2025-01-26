@@ -7,8 +7,8 @@ public class ScoreDisplay : MonoBehaviour
 
     public void UpdateDisplay()
     {
-        textBubbleScore.text = SessionManager.GetBubbleWins().ToString();
-        textSpikeScore.text = SessionManager.GetSpikeWins().ToString();
+        textBubbleScore.text = SessionManager.GetWins(Team.Bubble).ToString();
+        textSpikeScore.text = SessionManager.GetWins(Team.Spike).ToString();
 
     }
 

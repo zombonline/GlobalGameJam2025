@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class Health : MonoBehaviour
 {
     private float health = 100f;
-
+    private bool canTakeDamage = true;
 
     public delegate void DeathDelegate(GameObject gameObject);
     public event DeathDelegate onDeath;
@@ -25,5 +25,10 @@ public class Health : MonoBehaviour
     {
         onDeath?.Invoke(this.gameObject);
         Destroy(gameObject);
+    }
+
+    public void SetCanTakeDamage(bool canTakeDamage)
+    {
+        canTakeDamage = canTakeDamage;
     }
 }

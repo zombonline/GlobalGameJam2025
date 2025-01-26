@@ -15,13 +15,15 @@ using UnityEngine.UI;
 public class LobbyManager : MonoBehaviour
 {
     [SerializeField] RectTransform[] playerUIElements;
-    [SerializeField] Sprite bubbleSprite, spikeSprite;
+    [SerializeField] Sprite bubbleSprite, spikeSprite, cardActive, cardUnactive;
     PlayerInputManager playerInputManager;
     [SerializeField] GameObject[] prefabs;
     int currentPrefab;
 
 
     [SerializeField] Counter winsCounter;
+
+    [SerializeField] Button startButton;
     private void Awake()
     {
         playerInputManager = GetComponent<PlayerInputManager>();
@@ -44,6 +46,7 @@ public class LobbyManager : MonoBehaviour
     }
     private void DisplayPlayer(PlayerInput playerInput)
     {
+        //playerUIElements[playerInput.playerIndex].GetComponent<SpriteRenderer>().sprite = cardActive;
         playerUIElements[playerInput.playerIndex].Find("Player Name").GetComponentInChildren<TextMeshProUGUI>().text = "Player " + playerInput.playerIndex.ToString();
         if (playerInput.CompareTag("Bubble"))
             playerUIElements[playerInput.playerIndex].Find("Player Image").GetComponentInChildren<Image>().sprite = bubbleSprite;
@@ -60,10 +63,11 @@ public class LobbyManager : MonoBehaviour
             prefab = GetComponent<PlayerInputManager>().playerPrefab
         });
     }
-    void OnPlayerJoined(PlayerInput playerInput)
+    private void OnPlayerJoined(PlayerInput playerInput)
     {
         DisplayPlayer(playerInput);
         AddPlayerToSession(playerInput);
+        CheckCanStart();
     }
     public void SwapPlayer(GameObject player)
     {
@@ -85,7 +89,8 @@ public class LobbyManager : MonoBehaviour
     }
     public void TogglePlayerReady(PlayerInput player, bool val)
     {
-        playerUIElements[player.playerIndex].Find("Ready Image").GetComponentInChildren<Image>().enabled = val;    
+        playerUIElements[player.playerIndex].Find("Ready Image").GetComponentInChildren<Image>().enabled = val; 
+        CheckCanStart();
     }
     public bool CheckAllPlayersReady()
     {
@@ -102,5 +107,8 @@ public class LobbyManager : MonoBehaviour
     {
         SessionManager.SetRequiredWins(wins);
     }
-
+    public void CheckCanStart()
+    {
+        startButton.interactable = CheckAllPlayersReady() && SessionManager.GetPlayers().Count >= 2;
+    }
 }

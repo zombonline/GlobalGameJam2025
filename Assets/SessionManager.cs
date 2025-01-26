@@ -56,34 +56,31 @@ public static class SessionManager
     public static int GetRequiredWins() {
         return requiredWins;
     }
-    public static void AddBubbleWin()
+    public static void AddWin(Team team)
     {
-        bubbleWins++;
-        if(bubbleWins >= requiredWins)
+        if (team == Team.Bubble)
         {
-            Debug.Log("Bubble wins");
+            bubbleWins++;
+        }
+        else
+        {
+            spikeWins++;
         }
     }
-    public static void AddSpikeWin()
-    {
-        spikeWins++;
-        if(spikeWins >= requiredWins)
-        {
-            Debug.Log("Spike wins");
-        }
-    }
-
     public static void ClearWins()
     {
         bubbleWins = 0;
         spikeWins = 0;
     }   
-    public static int GetBubbleWins()
+    public static int GetWins(Team team)
     {
-        return bubbleWins;
-    }
-    public static int GetSpikeWins()
-    {
-        return spikeWins;
+        if (team == Team.Bubble)
+        {
+            return bubbleWins;
+        }
+        else
+        {
+            return spikeWins;
+        }
     }
 }

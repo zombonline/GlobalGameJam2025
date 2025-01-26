@@ -160,6 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8003504516601613483}
   - component: {fileID: 7394489095854294359}
+  - component: {fileID: 1859642688950383176}
   - component: {fileID: 6038990202897932305}
   - component: {fileID: 7440682945318810549}
   m_Layer: 5
@@ -199,6 +200,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3286420888022219146}
   m_CullTransparentMesh: 1
+--- !u!114 &1859642688950383176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3286420888022219146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6082693a933ca2429c201e17b607469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teamImage: {fileID: 0}
+  playerNameText: {fileID: 0}
+  readyText: {fileID: 0}
 --- !u!114 &6038990202897932305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,7 +235,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fe066a2071ab76447b2fae504e2512aa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09a9a21bbeeba1445b0bd2f7865aaf1d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

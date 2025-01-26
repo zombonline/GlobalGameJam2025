@@ -7,7 +7,7 @@ public class WinScreen : MonoBehaviour
 
     private void Awake()
     {
-        if(SessionManager.GetBubbleWins() >= SessionManager.GetRequiredWins())
+        if(SessionManager.GetWins(Team.Bubble) >= SessionManager.GetRequiredWins())
         {
             winText.text = "Bubbles Win!";
         }

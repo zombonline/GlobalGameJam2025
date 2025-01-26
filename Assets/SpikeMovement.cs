@@ -22,11 +22,14 @@ public class SpikeMovement : PlayerMovement
         Aim(move.ReadValue<Vector2>());
         if (fire.IsPressed() && cooldownTimer <= 0)
         {
+            GetComponent<SpikeSpineAnimator>().PlayChargeAnimation();
+            GetComponent<SpikeSpineAnimator>().LockState();
             Fire();
         }
         if (fire.WasReleasedThisFrame() && cooldownTimer <= 0)
         {
-            if(moveChargeValue > pressLength)
+            GetComponent<SpikeSpineAnimator>().UnlockState();
+            if (moveChargeValue > pressLength)
             {
                 rb.linearVelocity = Vector2.zero;
                 rb.AddForce(movementDir * moveForce, ForceMode2D.Impulse);

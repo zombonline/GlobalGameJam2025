@@ -58,7 +58,6 @@ public class LevelManager : MonoBehaviour
                 newPlayer.transform.position = currentLevel.spikeSpawns[spikeCount].position;
                 spikeCount++;
             }
-            
         }
     }
     private void DespawnPlayers()
@@ -74,38 +73,60 @@ public class LevelManager : MonoBehaviour
     }
     private void CheckRemainingPlayersInLevelByTag(string tag)
     {
-        Debug.Log("Checking remaining players with tag " + tag);
-        //checks if this onbject that died was the last 1 as this is called before rhe obnject is destroyed
+        //checks if this object that died was the last 1 as this is called before rhe obnject is destroyed
         if (GameObject.FindGameObjectsWithTag(tag).Length == 1)
         {
-            if (tag == "Bubble")
-            {
-                SessionManager.AddSpikeWin();
-            }
-            else
-            {
-                SessionManager.AddBubbleWin();
-            }
-            LevelOver();
+            StartCoroutine(LevelOver(tag == "Spike" ? Team.Bubble : Team.Spike));
         }
     }
     private void LevelTimeUp()
     {
-        SessionManager.AddBubbleWin();
-        LevelOver();
+        StartCoroutine(LevelOver(Team.Bubble));
     }
-    private void LevelOver()
+    private IEnumerator LevelOver(Team winningTeam)
     {
-        winCounterSpike.UpdateCounter(SessionManager.GetSpikeWins());
-        winCounterBubble.UpdateCounter(SessionManager.GetBubbleWins());
-        DespawnPlayers();
-        Destroy(currentLevel.gameObject);
-        if(SessionManager.GetBubbleWins() >= SessionManager.GetRequiredWins() || SessionManager.GetSpikeWins() >= SessionManager.GetRequiredWins())
+        if (currentLevel.levelComplete) { yield break; }
+        currentLevel.levelComplete = true;
+        SessionManager.AddWin(winningTeam);
+        winCounterSpike.UpdateCounter(SessionManager.GetWins(Team.Spike));
+        winCounterBubble.UpdateCounter(SessionManager.GetWins(Team.Bubble));
+        TogglePlayerHealth();
+        PlayerWinLoseAnimations(winningTeam);
+        yield return new WaitForSeconds(3);
+
+
+        if (SessionManager.GetWins(winningTeam) >= SessionManager.GetRequiredWins())
         {
             SceneManager.LoadScene("Game Over");
-            return;
+            yield break;
         }
+        DespawnPlayers();
+        Destroy(currentLevel.gameObject);
         LoadLevel(Instantiate(levels[Random.Range(0, levels.Length)]));
+    }
+    private void TogglePlayerHealth()
+    {
+        foreach(var h in FindObjectsByType<Health>(FindObjectsSortMode.None))
+        {
+            h.SetCanTakeDamage(false);
+        }
+    }
+
+    private void PlayerWinLoseAnimations(Team winningTeam)
+    {
+        foreach(var p in FindObjectsByType<SpineAnimator>(FindObjectsSortMode.None))
+        {
+            p.UnlockState();
+            if (p.tag == winningTeam.ToString())
+            {
+                p.PlayWinFace();
+            }
+            else
+            {
+                p.PlayLoseFace();
+            }
+            p.LockState();
+        }
     }
     private void LoadLevel(Level level)
     {

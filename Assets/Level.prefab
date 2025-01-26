@@ -69,6 +69,7 @@ MonoBehaviour:
   mainCamera: {fileID: 8264608406536009926}
   outerWalls: {fileID: 405087423552853998}
   background: {fileID: 2385769947693876914}
+  levelComplete: 0
 --- !u!1 &273356187537214466
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +469,7 @@ GameObject:
   - component: {fileID: 549713597827550116}
   m_Layer: 0
   m_Name: Wall (Passable)
-  m_TagString: Wall
+  m_TagString: Wall Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -587,7 +588,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &892539631563195068
 GameObject:
