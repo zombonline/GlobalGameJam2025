@@ -12,22 +12,18 @@ public class LobbyPlayerUI : MonoBehaviour
     [SerializeField] Image readyImage;
     [SerializeField] Sprite cardEnabled, cardDisabled;
 
-    Image cardImage;
-
-    private void Awake()
-    {
-        cardImage = GetComponent<Image>();
-    }
-
+    [SerializeField] Image cardImage;
     public void SetPlayer(PlayerData player)
     {
+        Debug.Log(player);
         this.player = player;
         cardImage.sprite = cardEnabled;
         teamImage.sprite = (player.team == Team.Bubble) ? bubble : spike;
         playerNameText.text = "Player " + (player.playerIndex + 1).ToString();
+        readyImage.enabled = false;
     }
-    public void SetReadyDisplay(bool ready)
+    public void SetReadyDisplay(bool val)
     {
-        readyImage.enabled = ready;
+        readyImage.enabled = val;
     }
 }

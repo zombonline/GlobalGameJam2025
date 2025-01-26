@@ -218,6 +218,7 @@ MonoBehaviour:
   readyImage: {fileID: 1765211619397262990}
   cardEnabled: {fileID: 21300000, guid: fe066a2071ab76447b2fae504e2512aa, type: 3}
   cardDisabled: {fileID: 21300000, guid: 09a9a21bbeeba1445b0bd2f7865aaf1d, type: 3}
+  cardImage: {fileID: 6038990202897932305}
 --- !u!114 &6038990202897932305
 MonoBehaviour:
   m_ObjectHideFlags: 0

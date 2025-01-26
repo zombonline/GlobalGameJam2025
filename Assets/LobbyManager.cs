@@ -52,7 +52,7 @@ public class LobbyManager : MonoBehaviour
             controlScheme = playerInput.currentControlScheme,
             devices = playerInput.devices.ToArray(),
             prefab = GetComponent<PlayerInputManager>().playerPrefab,
-            team = GetComponent<PlayerInputManager>().playerPrefab.tag == "Bubble" ? Team.Bubble : Team.Spike
+            team = playerInput.GetComponent<PlayerInput>().tag == "Bubble" ? Team.Bubble : Team.Spike
         };
         SessionManager.AddPlayer(newPlayer);
         playerUIElements[playerInput.playerIndex].SetPlayer(newPlayer);

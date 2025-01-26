@@ -814,7 +814,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  skeletonDataAsset: {fileID: 11400000, guid: 0d000be5b03aedb4e8e946dc07a67c6b, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 4aa292cc99ba6334e9ad92ae842295ca, type: 2}
   additiveMaterial: {fileID: 2100000, guid: 2e8245019faeb8c43b75f9ca3ac8ee34, type: 2}
   multiplyMaterial: {fileID: 2100000, guid: e74a1f8978a7da348a721508d0d58834, type: 2}
   screenMaterial: {fileID: 2100000, guid: bab24c479f34eec45be6ea8595891569, type: 2}
@@ -822,10 +822,10 @@ MonoBehaviour:
   initialSkinName: Bubble Wins
   initialFlipX: 0
   initialFlipY: 0
-  startingAnimation: 
+  startingAnimation: animation
   startingLoop: 0
   timeScale: 1
-  freeze: 0
+  freeze: 1
   layoutScaleMode: 0
   referenceSize: {x: 750.00006, y: 553}
   pivotOffset: {x: 0, y: 0}

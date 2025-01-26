@@ -102,6 +102,7 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSpineEvent(levelTransition.AnimationState, "Scene Change");
         if (SessionManager.GetWins(winningTeam) >= SessionManager.GetRequiredWins())
         {
+            levelTransition.freeze = true;
             SceneManager.LoadScene("Game Over");
             yield break;
         }
