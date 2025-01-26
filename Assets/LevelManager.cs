@@ -22,6 +22,7 @@ public class LevelManager : MonoBehaviour
         winCounterBubble.SetMax(SessionManager.GetRequiredWins());
         winCounterSpike.SetMax(SessionManager.GetRequiredWins());
         LoadLevel(Instantiate(levels[Random.Range(0, levels.Length)]));
+        FMODController.UpdateState(1);
     }
     private void OnEnable()
     {

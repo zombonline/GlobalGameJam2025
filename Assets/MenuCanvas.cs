@@ -12,6 +12,7 @@ public class MenuCanvas : MonoBehaviour
         SessionManager.ClearPlayers();
         SessionManager.ClearWins();
         yield return new WaitForSeconds(2f);
+        FMODController.Start();
         menuScreenGraphic.AnimationState.SetAnimation(1, "Opening", false);
         yield return new WaitForSeconds(1f);
         LeanTween.moveY(buttons, buttonsTarget.localPosition.y, 1f).setEase(LeanTweenType.easeOutBounce);

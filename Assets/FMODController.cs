@@ -1,12 +1,27 @@
 using UnityEngine;
 using FMOD;
 using FMODUnity;
-public class FMODController : MonoBehaviour
+public static class FMODController 
 {
-    [SerializeField] StudioEventEmitter fmodEmitter;
+    private static FMOD.Studio.EventInstance eventInstance;
 
-    public void UpdateState(string name)
+
+    public static void Start()
     {
-        fmodEmitter.Play();
+        if (eventInstance.isValid())
+        {
+            eventInstance.setParameterByName("Music State", 0);
+        }
+        eventInstance = RuntimeManager.CreateInstance("event:/Music/Music");
+        eventInstance.start();
+
+    }
+
+    public static void UpdateState(int val)
+    {
+        eventInstance.setParameterByName("Music State", 1);
+        float yes = -1f;
+        eventInstance.getParameterByName("Music State", out yes);
+        UnityEngine.Debug.Log(yes);
     }
 }
