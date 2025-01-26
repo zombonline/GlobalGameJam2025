@@ -14,6 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textureLoadingMode: 0
   onDemandTextureLoader: {fileID: 0}
+<<<<<<< Updated upstream
   atlasFile: {fileID: 4900000, guid: 87babe6508e42b4469470889b1591a75, type: 3}
   materials:
   - {fileID: 2100000, guid: 3d71cfc7b5e43ea4a9330699919aa2af, type: 2}
+=======
+  atlasFile: {fileID: 4900000, guid: 3b804b00ca8709840b170a686889fd3a, type: 3}
+  materials:
+  - {fileID: 2100000, guid: 8e7236d4ec25ce94f80a8a23083df9bb, type: 2}
+>>>>>>> Stashed changes

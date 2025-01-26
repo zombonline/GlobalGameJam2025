@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: skeleton_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
+<<<<<<< Updated upstream
   - {fileID: 11400000, guid: b988d67dd1d06a94c88d339c5b13377e, type: 2}
   scale: 0.01
   skeletonJSON: {fileID: 4900000, guid: b41a437cf09614745adcc78e2ddfaba5, type: 3}
+=======
+  - {fileID: 11400000, guid: 1e00802c2aeb05641a4483ce243feb93, type: 2}
+  scale: 0.01
+  skeletonJSON: {fileID: 4900000, guid: cf9581fa675bdb9428462efc28444c30, type: 3}
+>>>>>>> Stashed changes
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0

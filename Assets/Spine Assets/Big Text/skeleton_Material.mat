@@ -25,7 +25,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
+<<<<<<< Updated upstream
         m_Texture: {fileID: 2800000, guid: 8d4d3b9c697af50408821f1e7895de58, type: 3}
+=======
+        m_Texture: {fileID: 2800000, guid: 2e8b873f6783d48468524f59f45c56c1, type: 3}
+>>>>>>> Stashed changes
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []

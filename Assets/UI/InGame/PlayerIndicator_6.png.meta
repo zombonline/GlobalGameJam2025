@@ -1,29 +1,16 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: 8d4d3b9c697af50408821f1e7895de58
-=======
-guid: 2e8b873f6783d48468524f59f45c56c1
->>>>>>> Stashed changes
+guid: 6fa41714697015f48b1150939f63ece1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -964824239653993824
-    second: skeleton_0
-  - first:
-      213: -3264722998049715623
-    second: skeleton_1
-  - first:
-      213: 1664357772287024801
-    second: skeleton_2
-  - first:
-      213: -1861396428348373837
-    second: skeleton_3
+      213: 8043778956218371747
+    second: PlayerIndicator_6_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -59,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -68,7 +55,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -88,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -152,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: skeleton_0
+      name: PlayerIndicator_6_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 342
-        width: 565
-        height: 548
+        x: 0
+        y: 2
+        width: 110
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,74 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a2ccb447714c92f0800000000000000
-      internalID: -964824239653993824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skeleton_1
-      rect:
-        serializedVersion: 2
-        x: 422
-        y: 1
-        width: 790
-        height: 341
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 95ac2330bbf51b2d0800000000000000
-      internalID: -3264722998049715623
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skeleton_2
-      rect:
-        serializedVersion: 2
-        x: 566
-        y: 342
-        width: 752
-        height: 555
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1ae1454639cf81710800000000000000
-      internalID: 1664357772287024801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: skeleton_3
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1
-        width: 421
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b44d1e7fcdfa26e0800000000000000
-      internalID: -1861396428348373837
+      spriteID: 3ae8829c75e31af60800000000000000
+      internalID: 8043778956218371747
       vertices: []
       indices: 
       edges: []
@@ -252,11 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      skeleton_0: -964824239653993824
-      skeleton_1: -3264722998049715623
-      skeleton_2: 1664357772287024801
-      skeleton_3: -1861396428348373837
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
