@@ -3,31 +3,31 @@ Character Setup.png
 	filter: Linear, Linear
 	pma: true
 Bubbles
-	bounds: 3380, 4821, 105, 105
+	bounds: 3400, 4801, 125, 125
 Charge_Face_01
-	bounds: 3728, 4761, 107, 81
+	bounds: 3400, 4718, 107, 81
 Charge_Face_02
-	bounds: 3667, 4751, 84, 48
-	rotate: 90
+	bounds: 3639, 4702, 84, 48
 Excited to Pop S
-	bounds: 3728, 4844, 113, 82
+	bounds: 3527, 4755, 113, 82
 Idle_Face_01 B
-	bounds: 3248, 4712, 83, 86
+	bounds: 3509, 4670, 83, 86
 	rotate: 90
 Idle_Face_01 S
-	bounds: 3380, 4736, 83, 90
+	bounds: 3736, 4689, 83, 90
 	rotate: 90
 Idle_Face_02
-	bounds: 3581, 4770, 84, 65
+	bounds: 3768, 4842, 84, 65
+	rotate: 90
 Idle_Face_03
-	bounds: 3336, 4713, 82, 40
+	bounds: 3597, 4671, 82, 40
 	rotate: 90
 Lose Face
-	bounds: 3581, 4702, 74, 66
+	bounds: 3768, 4774, 74, 66
 Movement Angry Face S
-	bounds: 3487, 4839, 122, 87
+	bounds: 3527, 4839, 122, 87
 Movement Close Eyes B
-	bounds: 3472, 4711, 77, 41
+	bounds: 3639, 4659, 77, 41
 Sequence/Pop_Death00
 	bounds: 2, 3006, 1920, 1080
 	rotate: 90
@@ -139,11 +139,11 @@ Sequence/Pop_Death37
 	bounds: 6494, 1924, 1920, 1080
 	rotate: 90
 Spike
-	bounds: 3248, 4797, 129, 130
+	bounds: 3248, 4777, 149, 150
 	rotate: 90
 Win Face
-	bounds: 3611, 4837, 89, 115
+	bounds: 3651, 4837, 89, 115
 	rotate: 90
 Worried B
-	bounds: 3487, 4754, 83, 92
+	bounds: 3642, 4752, 83, 92
 	rotate: 90
