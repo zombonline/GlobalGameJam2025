@@ -42,6 +42,10 @@ public void SetTime(float time)
     {
         isRunning = false;
     }
+    public void ResumeTimer()
+    {
+        isRunning = true;
+    }
 
     public void DisplayTime()
     {

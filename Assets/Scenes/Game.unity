@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &11789300
 RectTransform:
   m_ObjectHideFlags: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
   initialSkinName: Ready
   initialFlipX: 0
   initialFlipY: 0
-  startingAnimation: 
+  startingAnimation: animation
   startingLoop: 1
   timeScale: 1
   freeze: 0
@@ -1073,7 +1073,7 @@ MonoBehaviour:
   winCounterSpike: {fileID: 545865938}
   winCounterBubble: {fileID: 319976601}
   levelTransition: {fileID: 1305502696}
-  countdown: {fileID: 0}
+  countdown: {fileID: 11789301}
 --- !u!4 &1366126517
 Transform:
   m_ObjectHideFlags: 0

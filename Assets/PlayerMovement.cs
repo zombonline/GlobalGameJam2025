@@ -14,6 +14,14 @@ public class PlayerMovement : MonoBehaviour
 
     protected Vector2 velocityLastFrame;
 
+    bool canMove = true;
+
+    public void SetCanMove(bool canMove)
+    {
+        this.canMove = canMove;
+        rb.bodyType = canMove ? RigidbodyType2D.Dynamic : RigidbodyType2D.Kinematic;
+
+    }
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();

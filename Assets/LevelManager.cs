@@ -143,18 +143,30 @@ public class LevelManager : MonoBehaviour
         Debug.Log("Timer set to " + currentLevel.timeLimit);
         timer.StartTimer();
         SpawnPlayers();
+        StartCoroutine(CountdownToLevelBegin());
     }
+
     public IEnumerator CountdownToLevelBegin()
     {
+        timer.PauseTimer();
+        foreach(var p in FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None))
+        {
+            p.SetCanMove(false);
+        }
         countdown.gameObject.SetActive(true);
         countdown.Skeleton.SetSkin("Ready");
-        countdown.AnimationState.SetAnimation(0, "Animation", false);
-        yield return new WaitForSeconds(1f);
+        countdown.AnimationState.SetAnimation(0, "animation", false);
+        yield return new WaitForSeconds(2f);
         countdown.AnimationState.ClearTracks();
-        countdown.Skeleton.SetSkin("Go");
-        countdown.AnimationState.SetAnimation(0, "Animation", false);
+        countdown.Skeleton.SetSkin("Go!");
+        countdown.AnimationState.SetAnimation(0, "animation", false);
         yield return new WaitForSeconds(1f);
         countdown.AnimationState.ClearTracks();
         countdown.gameObject.SetActive(false);
+        foreach (var p in FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None))
+        {
+            p.SetCanMove(true);
+        }
+        timer.ResumeTimer();
     }
 }
