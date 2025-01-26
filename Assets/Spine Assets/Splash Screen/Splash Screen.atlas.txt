@@ -1,0 +1,15 @@
+Splash Screen.png
+	size: 2438, 1086
+	filter: Linear, Linear
+	pma: true
+Background_3
+	bounds: 2, 2, 1922, 1082
+Bop
+	bounds: 1926, 468, 445, 307
+Bubble
+	bounds: 2231, 261, 205, 205
+Pop
+	bounds: 1926, 777, 450, 307
+Zip
+	bounds: 1926, 116, 350, 303
+	rotate: 90
