@@ -1,3 +1,4 @@
+using Spine.Unity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.PackageManager;
@@ -12,6 +13,8 @@ public class LevelManager : MonoBehaviour
     Level currentLevel;
     [SerializeField] Timer timer;
     [SerializeField] WinCounter winCounterSpike, winCounterBubble;
+
+    [SerializeField] SkeletonGraphic levelTransition;
     private void Awake()
     {
         inputManager = GetComponent<PlayerInputManager>();
@@ -93,8 +96,9 @@ public class LevelManager : MonoBehaviour
         TogglePlayerHealth();
         PlayerWinLoseAnimations(winningTeam);
         yield return new WaitForSeconds(3);
-
-
+        levelTransition.AnimationState.ClearTracks();
+        levelTransition.AnimationState.SetAnimation(0, "animation", false);
+        yield return new WaitForSpineEvent(levelTransition.AnimationState, "Scene Change");
         if (SessionManager.GetWins(winningTeam) >= SessionManager.GetRequiredWins())
         {
             SceneManager.LoadScene("Game Over");

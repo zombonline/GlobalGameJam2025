@@ -64,7 +64,7 @@ MonoBehaviour:
   - {fileID: 3937463773343267147}
   - {fileID: 914842991189270118}
   - {fileID: 2016342417369216265}
-  timeLimit: 60
+  timeLimit: 4
   levelScale: 7
   mainCamera: {fileID: 8264608406536009926}
   outerWalls: {fileID: 405087423552853998}
