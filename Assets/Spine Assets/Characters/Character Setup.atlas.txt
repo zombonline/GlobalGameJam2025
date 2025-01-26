@@ -1,149 +1,39 @@
 Character Setup.png
-	size: 7690, 4928
+	size: 479, 284
 	filter: Linear, Linear
 	pma: true
 Bubbles
-	bounds: 3400, 4801, 125, 125
+	bounds: 2, 5, 125, 125
 Charge_Face_01
-	bounds: 3400, 4718, 107, 81
+	bounds: 244, 175, 107, 81
+	rotate: 90
 Charge_Face_02
-	bounds: 3639, 4702, 84, 48
+	bounds: 218, 2, 84, 48
 Excited to Pop S
-	bounds: 3527, 4755, 113, 82
+	bounds: 218, 52, 113, 82
+	rotate: 90
 Idle_Face_01 B
-	bounds: 3509, 4670, 83, 86
-	rotate: 90
+	bounds: 387, 104, 83, 86
 Idle_Face_01 S
-	bounds: 3736, 4689, 83, 90
-	rotate: 90
+	bounds: 327, 192, 83, 90
 Idle_Face_02
-	bounds: 3768, 4842, 84, 65
+	bounds: 412, 198, 84, 65
 	rotate: 90
 Idle_Face_03
-	bounds: 3597, 4671, 82, 40
+	bounds: 415, 20, 82, 40
 	rotate: 90
 Lose Face
-	bounds: 3768, 4774, 74, 66
+	bounds: 347, 5, 74, 66
+	rotate: 90
 Movement Angry Face S
-	bounds: 3527, 4839, 122, 87
+	bounds: 129, 8, 122, 87
+	rotate: 90
 Movement Close Eyes B
-	bounds: 3639, 4659, 77, 41
-Sequence/Pop_Death00
-	bounds: 2, 3006, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death01
-	bounds: 2, 1084, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death02
-	bounds: 2, 2, 1920, 1080
-Sequence/Pop_Death03
-	bounds: 1084, 3006, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death04
-	bounds: 1084, 1084, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death05
-	bounds: 1924, 2, 1920, 1080
-Sequence/Pop_Death06
-	bounds: 3846, 3846, 1920, 1080
-Sequence/Pop_Death07
-	bounds: 2166, 3006, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death08
-	bounds: 5768, 3846, 1920, 1080
-Sequence/Pop_Death09
-	bounds: 2166, 1084, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death10
-	bounds: 3248, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death11
-	bounds: 3846, 2, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death12
-	bounds: 4330, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death13
-	bounds: 4928, 2, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death14
-	bounds: 5412, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death15
-	bounds: 6010, 2, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death16
-	bounds: 6010, 2, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death17
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death18
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death19
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death20
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death21
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death22
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death23
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death24
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death25
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death26
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death27
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death28
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death29
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death30
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death31
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death32
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death33
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death34
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death35
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death36
-	bounds: 6494, 1924, 1920, 1080
-	rotate: 90
-Sequence/Pop_Death37
-	bounds: 6494, 1924, 1920, 1080
+	bounds: 304, 2, 77, 41
 	rotate: 90
 Spike
-	bounds: 3248, 4777, 149, 150
-	rotate: 90
+	bounds: 2, 132, 149, 150
 Win Face
-	bounds: 3651, 4837, 89, 115
-	rotate: 90
+	bounds: 153, 167, 89, 115
 Worried B
-	bounds: 3642, 4752, 83, 92
-	rotate: 90
+	bounds: 302, 81, 83, 92
