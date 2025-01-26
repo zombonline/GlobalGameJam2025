@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     protected Vector2 velocityLastFrame;
 
-    bool canMove = true;
+    protected bool canMove = true;
 
     public void SetCanMove(bool canMove)
     {

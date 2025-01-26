@@ -19,6 +19,7 @@ public class SpikeMovement : PlayerMovement
     [SerializeField] Image chargeImageFill, chargeImageBackground;
     private void Update()
     {
+        if (!canMove) { return; }
         Aim(move.ReadValue<Vector2>());
         if (fire.IsPressed() && cooldownTimer <= 0)
         {
