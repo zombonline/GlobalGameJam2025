@@ -822,10 +822,10 @@ MonoBehaviour:
   initialSkinName: Bubble Wins
   initialFlipX: 0
   initialFlipY: 0
-  startingAnimation: animation
+  startingAnimation: 
   startingLoop: 0
   timeScale: 1
-  freeze: 1
+  freeze: 0
   layoutScaleMode: 0
   referenceSize: {x: 750.00006, y: 553}
   pivotOffset: {x: 0, y: 0}

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Radial Wheel_0: -6256971510099150948
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
