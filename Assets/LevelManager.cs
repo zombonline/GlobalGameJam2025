@@ -14,7 +14,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] Timer timer;
     [SerializeField] WinCounter winCounterSpike, winCounterBubble;
 
-    [SerializeField] SkeletonGraphic levelTransition;
+    [SerializeField] SkeletonGraphic levelTransition, countdown;
+
     private void Awake()
     {
         inputManager = GetComponent<PlayerInputManager>();
@@ -51,7 +52,7 @@ public class LevelManager : MonoBehaviour
             inputManager.playerPrefab = player.prefab;
             var newPlayer = inputManager.JoinPlayer(player.playerIndex, -1, player.controlScheme, player.devices);
             newPlayer.GetComponent<Health>().onDeath += HandlePlayerDeath;
-            if (player.prefab.tag == "Bubble")
+            if (player.team == Team.Bubble)
             {
                 newPlayer.transform.position = currentLevel.bubbleSpawns[bubbleCount].position;
                 bubbleCount++;
@@ -142,5 +143,18 @@ public class LevelManager : MonoBehaviour
         Debug.Log("Timer set to " + currentLevel.timeLimit);
         timer.StartTimer();
         SpawnPlayers();
+    }
+    public IEnumerator CountdownToLevelBegin()
+    {
+        countdown.gameObject.SetActive(true);
+        countdown.Skeleton.SetSkin("Ready");
+        countdown.AnimationState.SetAnimation(0, "Animation", false);
+        yield return new WaitForSeconds(1f);
+        countdown.AnimationState.ClearTracks();
+        countdown.Skeleton.SetSkin("Go");
+        countdown.AnimationState.SetAnimation(0, "Animation", false);
+        yield return new WaitForSeconds(1f);
+        countdown.AnimationState.ClearTracks();
+        countdown.gameObject.SetActive(false);
     }
 }

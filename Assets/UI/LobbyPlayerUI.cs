@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -13,8 +14,17 @@ public class LobbyPlayerUI : MonoBehaviour
     [SerializeField] Sprite cardEnabled, cardDisabled;
 
     [SerializeField] Image cardImage;
+
+    private void Awake()
+    {
+        if(teamImage.sprite == null)
+        {
+            teamImage.enabled = false;
+        }
+    }
     public void SetPlayer(PlayerData player)
     {
+        teamImage.enabled = true;
         Debug.Log(player);
         this.player = player;
         cardImage.sprite = cardEnabled;

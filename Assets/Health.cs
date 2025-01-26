@@ -15,6 +15,10 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        if(!canTakeDamage)
+        {
+            return;
+        }
         health -= damage;
         if (health <= 0)
         {
@@ -29,6 +33,6 @@ public class Health : MonoBehaviour
 
     public void SetCanTakeDamage(bool canTakeDamage)
     {
-        canTakeDamage = canTakeDamage;
+        this.canTakeDamage = canTakeDamage;
     }
 }
