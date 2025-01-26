@@ -47,7 +47,7 @@ public class LobbyManager : MonoBehaviour
     private void DisplayPlayer(PlayerInput playerInput)
     {
         //playerUIElements[playerInput.playerIndex].GetComponent<SpriteRenderer>().sprite = cardActive;
-        playerUIElements[playerInput.playerIndex].Find("Player Name").GetComponentInChildren<TextMeshProUGUI>().text = "Player " + playerInput.playerIndex.ToString();
+        playerUIElements[playerInput.playerIndex].Find("Player Name").GetComponentInChildren<TextMeshProUGUI>().text = "Player " + (playerInput.playerIndex+1).ToString();
         if (playerInput.CompareTag("Bubble"))
             playerUIElements[playerInput.playerIndex].Find("Player Image").GetComponentInChildren<Image>().sprite = bubbleSprite;
         else

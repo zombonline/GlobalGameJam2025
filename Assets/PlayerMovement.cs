@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
     {
         move = playerInput.actions["Move"];
         move.Enable();
-
         fire = playerInput.actions["Fire"];
         fire.Enable();
     }

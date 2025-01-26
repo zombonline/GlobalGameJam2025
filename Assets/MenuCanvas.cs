@@ -9,6 +9,8 @@ public class MenuCanvas : MonoBehaviour
     [SerializeField] RectTransform buttons, buttonsTarget;
     private IEnumerator Start()
     {
+        SessionManager.ClearPlayers();
+        SessionManager.ClearWins();
         yield return new WaitForSeconds(2f);
         menuScreenGraphic.AnimationState.SetAnimation(1, "Opening", false);
         yield return new WaitForSeconds(1f);

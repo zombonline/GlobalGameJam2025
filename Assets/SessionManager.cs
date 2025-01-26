@@ -53,7 +53,8 @@ public static class SessionManager
         Debug.Log("Required wins set to " + wins.ToString());
         requiredWins = wins;
     }
-    public static int GetRequiredWins() {
+    public static int GetRequiredWins()
+    {
         return requiredWins;
     }
     public static void AddWin(Team team)
