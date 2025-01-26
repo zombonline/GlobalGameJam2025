@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 5b7d3501d67388f4fac22f9853ecb1b0
-=======
-guid: db93a8c952d72514bae7e1e6a1a509b6
->>>>>>> b78c5d5 (Bubble transition wupdate)
+guid: 6439e2cbbcd61b34399596892e27fda9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1897303166912163791
-    second: One Sided Wall_0
+      213: -1887811298115910508
+    second: One Sided Wall Squared_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -143,12 +139,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: One Sided Wall_0
+      name: One Sided Wall Squared_0
       rect:
         serializedVersion: 2
-        x: 34
+        x: 89
         y: 12
-        width: 317
+        width: 210
         height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -158,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1301af072dc6ba5e0800000000000000
-      internalID: -1897303166912163791
+      spriteID: 49405dc50a52dc5e0800000000000000
+      internalID: -1887811298115910508
       vertices: []
       indices: 
       edges: []

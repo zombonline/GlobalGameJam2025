@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d6888d119b7ea154f9c4118f90971511
+=======
+guid: bb5cfc0a7d261334392494b443c81f4c
+>>>>>>> b78c5d5 (Bubble transition wupdate)
 TextureImporter:
   internalIDToNameTable:
   - first:
