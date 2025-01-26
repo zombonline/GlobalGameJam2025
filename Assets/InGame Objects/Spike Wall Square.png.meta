@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Spike Wall Square_0: 8859735593605367260
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

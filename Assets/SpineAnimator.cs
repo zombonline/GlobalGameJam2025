@@ -19,11 +19,14 @@ public class SpineAnimator: MonoBehaviour
     }
     public void PlayWinFace()
     {
-        UpdateState(0, "Win Face", true);    
+        
+        UpdateState(0, "Win Face", true);
+        stateLocked = true;
     }
     public void PlayLoseFace()
     {
         UpdateState(0, "Lose Face", true);
+        stateLocked = true;
     }
 
     public virtual void PlayProximityToEnemyFace()
