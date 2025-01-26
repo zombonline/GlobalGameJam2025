@@ -1,114 +1,42 @@
 Character Setup.png
-	size: 633, 5921
+	size: 162, 881
 	filter: Linear, Linear
 	pma: true
 Bubbles
-	bounds: 154, 87, 125, 123
+	bounds: 2, 605, 125, 123
 	offsets: 0, 2, 125, 125
 Charge_Face_01
-	bounds: 495, 58, 107, 81
+	bounds: 2, 258, 107, 81
 Charge_Face_02
-	bounds: 466, 8, 84, 48
+	bounds: 96, 164, 84, 48
+	rotate: 90
 Excited to Pop S
-	bounds: 495, 141, 113, 82
+	bounds: 2, 341, 113, 82
 Idle_Face_01 B
-	bounds: 124, 2, 83, 86
+	bounds: 2, 3, 83, 86
 	rotate: 90
 Idle_Face_01 S
-	bounds: 374, 23, 83, 90
+	bounds: 2, 88, 83, 90
 	rotate: 90
 Idle_Face_02
-	bounds: 2, 7, 84, 65
+	bounds: 90, 2, 84, 65
+	rotate: 90
 Idle_Face_03
-	bounds: 280, 7, 82, 40
+	bounds: 111, 250, 82, 40
+	rotate: 90
 Lose Face
-	bounds: 212, 11, 74, 66
+	bounds: 94, 88, 74, 66
 	rotate: 90
 Movement Angry Face S
-	bounds: 280, 134, 122, 87
+	bounds: 2, 516, 122, 87
 Movement Close Eyes B
-	bounds: 552, 15, 77, 41
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ00
-	bounds: 2, 225, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ01
-	bounds: 2, 581, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ02
-	bounds: 2, 937, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ03
-	bounds: 2, 1293, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ04
-	bounds: 2, 1649, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ05
-	bounds: 2, 2005, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ06
-	bounds: 2, 2361, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ07
-	bounds: 2, 2717, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ08
-	bounds: 2, 3073, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ09
-	bounds: 2, 3429, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ10
-	bounds: 2, 3785, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ11
-	bounds: 2, 3785, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ12
-	bounds: 2, 4141, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ13
-	bounds: 2, 4497, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ14
-	bounds: 2, 4853, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ15
-	bounds: 2, 5209, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ16
-	bounds: 2, 5209, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ17
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ18
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ19
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ20
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ21
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ22
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ23
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ24
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ25
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ26
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ27
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ28
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ29
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ30
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ31
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ32
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ33
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ34
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ35
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ36
-	bounds: 2, 5565, 629, 354
-Sequence/Elements - Simple Sparks 036 Hit Radial noRSZ37
-	bounds: 2, 5565, 629, 354
-Spike
-	bounds: 2, 74, 149, 150
+	bounds: 117, 334, 77, 41
 	rotate: 90
+Spike
+	bounds: 2, 729, 149, 150
 Win Face
-	bounds: 404, 108, 89, 115
+	bounds: 2, 425, 89, 115
+	rotate: 90
 Worried B
-	bounds: 280, 49, 83, 92
+	bounds: 2, 173, 83, 92
 	rotate: 90
