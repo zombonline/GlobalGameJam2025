@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
@@ -102,5 +103,20 @@ public class LobbyManager : MonoBehaviour
     public void CheckCanStart()
     {
         startButton.interactable = CheckAllPlayersReady() && SessionManager.GetPlayers().Count >= 2;
+        try
+        {
+            foreach (var button in FindObjectsByType<Button>(FindObjectsSortMode.None))
+            {
+                if (button != startButton)
+                {
+                    button.Select();
+                    break;
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e.Message);
+        }
     }
 }

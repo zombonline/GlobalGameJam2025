@@ -424,7 +424,7 @@ RectTransform:
   m_GameObject: {fileID: 599812428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1683191977}
@@ -453,7 +453,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -463,9 +463,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: aa1a239bc84a4384bbf3691ad52bc12a, type: 3}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: aa1a239bc84a4384bbf3691ad52bc12a, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ba16bc35b8bb9194bbd73ccf2a608f82, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 61616c9514c314647b3ce117f4a18498, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1666,7 +1666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 1322572360}
+  m_FirstSelected: {fileID: 1914027827}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1094413530
@@ -1813,11 +1813,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
---- !u!1 &1322572360 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6076512644233384932, guid: 33dd28865d81ccc4196f472938ca5f10, type: 3}
-  m_PrefabInstance: {fileID: 4662336166249494950}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1322572361 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9209815449129721036, guid: 33dd28865d81ccc4196f472938ca5f10, type: 3}
@@ -1828,7 +1823,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5325390322645774664, guid: 33dd28865d81ccc4196f472938ca5f10, type: 3}
   m_PrefabInstance: {fileID: 4662336166249494950}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322572360}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -2210,7 +2205,7 @@ RectTransform:
   m_GameObject: {fileID: 1914027827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1683191977}
@@ -2239,7 +2234,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2249,9 +2244,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: aa1a239bc84a4384bbf3691ad52bc12a, type: 3}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: aa1a239bc84a4384bbf3691ad52bc12a, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -2296,7 +2291,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ba16bc35b8bb9194bbd73ccf2a608f82, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 61616c9514c314647b3ce117f4a18498, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2724,8 +2719,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 1809338474}
     m_Modifications:
     - target: {fileID: 5325390322645774664, guid: 33dd28865d81ccc4196f472938ca5f10, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5325390322645774664, guid: 33dd28865d81ccc4196f472938ca5f10, type: 3}
       propertyPath: m_Interactable
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5325390322645774664, guid: 33dd28865d81ccc4196f472938ca5f10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2744803006436226943, guid: 6731a7961ccb93b47ac7af9c8a12418a, type: 3}
+    - target: {fileID: 5325390322645774664, guid: 33dd28865d81ccc4196f472938ca5f10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadNextScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 5325390322645774664, guid: 33dd28865d81ccc4196f472938ca5f10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneLoader, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6076512644233384932, guid: 33dd28865d81ccc4196f472938ca5f10, type: 3}
       propertyPath: m_Name
