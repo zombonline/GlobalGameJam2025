@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{dd181a26-4ef6-453b-82fc-4371e3013741}">
+		<property name="assetPath">
+			<value>GGJ 2025_Music_MENU.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>16</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2e37dd97-2a49-486c-9703-2d56569e13e3}</destination>
+		</relationship>
+	</object>
+</objects>
