@@ -1,0 +1,28 @@
+Wrecking ball setup.png
+	size: 2470, 1092
+	filter: Linear, Linear
+	pma: true
+Background
+	bounds: 15, 8, 1922, 1082
+Chain 1
+	bounds: 2194, 3, 83, 82
+Chain 3
+	bounds: 2109, 3, 83, 82
+Chain2
+	bounds: 2, 800, 11, 71
+Chain4
+	bounds: 2, 873, 11, 71
+Chain5
+	bounds: 1939, 2, 83, 83
+Chain6
+	bounds: 2, 946, 11, 71
+Chain7
+	bounds: 2024, 3, 83, 82
+Chain8
+	bounds: 2, 1019, 11, 71
+Chain9
+	bounds: 2279, 39, 83, 46
+Spike Wrecking Ball
+	bounds: 1939, 561, 529, 529
+Wrecking Ball
+	bounds: 1939, 87, 472, 472
