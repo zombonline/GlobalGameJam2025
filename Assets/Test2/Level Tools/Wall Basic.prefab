@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2311310980883676640}
   - component: {fileID: 3253900382906887591}
-  - component: {fileID: 3669468672191533328}
+  - component: {fileID: 4146123283693169716}
   m_Layer: 0
   m_Name: Wall Basic
   m_TagString: Wall
@@ -82,14 +82,14 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 5.41, y: 0.94}
+  m_Size: {x: 5.02, y: 0.94}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3669468672191533328
-BoxCollider2D:
+--- !u!60 &4146123283693169716
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -122,15 +122,29 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.09}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.42, y: 0, z: 0.42, w: 0}
+    border: {x: 0.42, y: 0.26, z: 0.42, w: 0.089999996}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 5.41, y: 0.94}
-    newSize: {x: 5.41, y: 0.94}
+    newSize: {x: 5.02, y: 0.94}
     adaptiveTilingThreshold: 0.5
     drawMode: 1
     adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 5.14, y: 0.79}
-  m_EdgeRadius: 0
+  m_AutoTiling: 1
+  m_Points:
+    m_Paths:
+    - - {x: 2.635, y: 0.24}
+      - {x: 2.465, y: 0.45999998}
+      - {x: 2.405, y: 0.47}
+      - {x: -2.385, y: 0.47}
+      - {x: -2.565, y: 0.35}
+      - {x: -2.625, y: 0.26}
+      - {x: -2.625, y: -0.099999994}
+      - {x: -2.475, y: -0.26999998}
+      - {x: -2.365, y: -0.31}
+      - {x: 2.325, y: -0.31}
+      - {x: 2.455, y: -0.26999998}
+      - {x: 2.595, y: -0.14999999}
+      - {x: 2.635, y: -0.02}
+  m_UseDelaunayMesh: 0

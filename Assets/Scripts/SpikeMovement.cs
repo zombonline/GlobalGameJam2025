@@ -23,13 +23,10 @@ public class SpikeMovement : PlayerMovement
         Aim(move.ReadValue<Vector2>());
         if (fire.IsPressed() && cooldownTimer <= 0)
         {
-            GetComponent<SpikeSpineAnimator>().PlayChargeAnimation();
-            GetComponent<SpikeSpineAnimator>().LockState();
             Fire();
         }
         if (fire.WasReleasedThisFrame() && cooldownTimer <= 0)
         {
-            GetComponent<SpikeSpineAnimator>().UnlockState();
             if (moveChargeValue > pressLength)
             {
                 rb.linearVelocity = Vector2.zero;
@@ -66,6 +63,11 @@ public class SpikeMovement : PlayerMovement
     {
         moveChargeValue += Time.deltaTime;
         chargeImageFill.fillAmount = moveChargeValue / pressLength;
+    }
+
+    public float GetMoveChargeValue()
+    {
+        return moveChargeValue;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

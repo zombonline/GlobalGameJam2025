@@ -25,6 +25,11 @@ public class Level : MonoBehaviour
 
     private void Awake()
     {
+        PopulateSpawnsLists();
+    }
+
+    private void PopulateSpawnsLists()
+    {
         bubbleSpawns = new List<Transform>();
         spikeSpawns = new List<Transform>();
         foreach (Transform spawn in bubbleSpawnsParent)
