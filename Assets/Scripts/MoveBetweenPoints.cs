@@ -11,6 +11,7 @@ public class MoveBetweenPoints : MonoBehaviour
     [SerializeField] StartPoint startPoint;
     private void Awake()
     {
+        if (objectToMove == null) { return; }
         point1 = transform.GetChild(0);
         point2 = transform.GetChild(1);
         objectToMove.transform.position = startPoint == StartPoint.Point1 ? point1.position : point2.position;

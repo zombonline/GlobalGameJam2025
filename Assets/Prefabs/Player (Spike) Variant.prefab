@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5723217742961228053}
   - component: {fileID: 7243518947994937893}
   - component: {fileID: 6010401384007173471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spine GameObject (Character Setup)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 5829659928825172469}
   - component: {fileID: 965536227109913393}
   - component: {fileID: 5927248528288516389}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 8664294944466832234}
   - component: {fileID: 6978697925284478211}
   - component: {fileID: 6480409056021490239}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 270997188694319401}
   - component: {fileID: 7025574766833515997}
   - component: {fileID: 1579643701497570926}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,12 +452,28 @@ PrefabInstance:
       value: Player (Spike) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2026312762014352015, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2026312762014352015, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
       propertyPath: m_TagString
       value: Spike
+      objectReference: {fileID: 0}
+    - target: {fileID: 2678057868026247643, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3100047359738332308, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
       propertyPath: spike
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5231751050687105574, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491673238880094478, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

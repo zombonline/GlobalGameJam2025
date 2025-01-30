@@ -19,7 +19,8 @@ public class SpikeMovement : PlayerMovement
     [SerializeField] Image chargeImageFill, chargeImageBackground;
     private void Update()
     {
-        if (!canMove) { return; }
+        base.Update();
+        if (!canMove) return;
         Aim(move.ReadValue<Vector2>());
         if (fire.IsPressed() && cooldownTimer <= 0)
         {
@@ -51,14 +52,7 @@ public class SpikeMovement : PlayerMovement
         {
             chargeImageBackground.color = Color.red;
         }
-
-        GetVelocityLastFrame();
     }
-    private void Aim(Vector2 val)
-    {
-        movementDir = val.normalized;
-    }
-
     private void Fire()
     {
         moveChargeValue += Time.deltaTime;

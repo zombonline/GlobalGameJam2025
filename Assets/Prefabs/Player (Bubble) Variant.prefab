@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3419001162800458450}
   - component: {fileID: 7057155432431622750}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 6373363342591706319}
   - component: {fileID: 8988990867112248258}
   - component: {fileID: 3362615146895465231}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spine GameObject (Character Setup)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,8 +290,16 @@ PrefabInstance:
       value: Player (Bubble) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2026312762014352015, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2026312762014352015, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
       propertyPath: m_TagString
       value: Bubble
+      objectReference: {fileID: 0}
+    - target: {fileID: 2678057868026247643, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3100047359738332308, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
       propertyPath: spike
@@ -300,6 +308,14 @@ PrefabInstance:
     - target: {fileID: 3100047359738332308, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
       propertyPath: bubble
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5231751050687105574, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491673238880094478, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8574407966582074999, guid: af445bfb3142c2840a4d41fe5990d77a, type: 3}
       propertyPath: m_NeverAutoSwitchControlSchemes

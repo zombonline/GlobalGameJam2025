@@ -11,16 +11,18 @@ public class Level : MonoBehaviour
     [SerializeField] private float levelScale = 9f;
 
     [SerializeField] Camera mainCamera;
-    [SerializeField] Transform outerWalls;
     [SerializeField] SpriteRenderer background;
+    [SerializeField] Transform levelWalls;
 
     public bool levelComplete = false;
+
     [ExecuteInEditMode]
     private void OnValidate()
     {
         mainCamera.orthographicSize = levelScale;
-        outerWalls.localScale = new Vector3(levelScale,levelScale,1);
-        background.size = new Vector2(4f*levelScale, 4f*levelScale);
+        GetComponent<BoxCollider2D>().size = new Vector2(mainCamera.ScreenToWorldPoint(mainCamera.pixelRect.size).x*2, mainCamera.ScreenToWorldPoint(mainCamera.pixelRect.size).y*2);
+        background.size = new Vector2(mainCamera.ScreenToWorldPoint(mainCamera.pixelRect.size).x * 2, mainCamera.ScreenToWorldPoint(mainCamera.pixelRect.size).y * 2);
+        levelWalls.localScale = new Vector3(levelScale, levelScale, 1f);
     }
 
     private void Awake()
@@ -65,5 +67,18 @@ public class Level : MonoBehaviour
     public float GetTimeLimit()
     {
         return timeLimit;
+    }
+
+    public Bounds GetLevelBounds()
+    {
+        return GetComponent<BoxCollider2D>().GetComponent<Collider2D>().bounds;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.GetComponent<PlayerMovement>() != null)
+        {
+            collision.GetComponent<PlayerMovement>().SetPositionToLastFrame();
+        }
     }
 }

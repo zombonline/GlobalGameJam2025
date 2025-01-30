@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     protected Rigidbody2D rb;
 
     protected Vector2 velocityLastFrame;
+    protected Vector2 positionLastFrame;
 
     protected bool canMove = true;
 
@@ -20,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
     {
         this.canMove = canMove;
         rb.bodyType = canMove ? RigidbodyType2D.Dynamic : RigidbodyType2D.Kinematic;
-
     }
     void Awake()
     {
@@ -39,10 +39,27 @@ public class PlayerMovement : MonoBehaviour
         fire.Disable();
     }
 
+    protected void Update()
+    {
+        GetPositionLastFrame();
+        GetVelocityLastFrame();
+    }
+
+    protected void GetPositionLastFrame()
+    {
+        positionLastFrame = transform.position;
+    }
     protected void GetVelocityLastFrame()
     {
         velocityLastFrame = rb.linearVelocity;
     }
 
-
+    protected void Aim(Vector2 val)
+    {
+        movementDir = val.normalized;
+    }
+    public void SetPositionToLastFrame()
+    {
+        transform.position = positionLastFrame;
+    }
 }
