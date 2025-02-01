@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273627883271214173}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.069468305, w: 0.99758416}
-  m_LocalPosition: {x: -0.50447893, y: -1.4244552, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.06946835, w: 0.99758416}
+  m_LocalPosition: {x: -0.5044792, y: -1.4244552, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -282,6 +282,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.4867592
       objectReference: {fileID: 0}
+    - target: {fileID: 4151651451921380473, guid: bcd50d8eaab5766438967f3e8f45c5cc, type: 3}
+      propertyPath: timeLimit
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 4462680893001480096, guid: bcd50d8eaab5766438967f3e8f45c5cc, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.9867592
@@ -322,11 +326,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2311310980883676640, guid: 99533eb3799bbbf43b8ebbb04e5a191f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -7.9999995
       objectReference: {fileID: 0}
     - target: {fileID: 2311310980883676640, guid: 99533eb3799bbbf43b8ebbb04e5a191f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.2926
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 2311310980883676640, guid: 99533eb3799bbbf43b8ebbb04e5a191f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -362,11 +366,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3253900382906887591, guid: 99533eb3799bbbf43b8ebbb04e5a191f, type: 3}
       propertyPath: m_Size.x
-      value: 2.5282302
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 3253900382906887591, guid: 99533eb3799bbbf43b8ebbb04e5a191f, type: 3}
       propertyPath: m_Size.y
-      value: 1.5252826
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253900382906887591, guid: 99533eb3799bbbf43b8ebbb04e5a191f, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3253900382906887591, guid: 99533eb3799bbbf43b8ebbb04e5a191f, type: 3}
       propertyPath: m_SortingOrder
@@ -387,6 +395,14 @@ PrefabInstance:
     - target: {fileID: 3997196375426620687, guid: 99533eb3799bbbf43b8ebbb04e5a191f, type: 3}
       propertyPath: m_Name
       value: Wall Basic
+      objectReference: {fileID: 0}
+    - target: {fileID: 4146123283693169716, guid: 99533eb3799bbbf43b8ebbb04e5a191f, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4146123283693169716, guid: 99533eb3799bbbf43b8ebbb04e5a191f, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

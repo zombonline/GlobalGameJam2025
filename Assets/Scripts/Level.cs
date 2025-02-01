@@ -28,6 +28,10 @@ public class Level : MonoBehaviour
     private void Awake()
     {
         PopulateSpawnsLists();
+        mainCamera.orthographicSize = levelScale;
+        GetComponent<BoxCollider2D>().size = new Vector2(mainCamera.ScreenToWorldPoint(mainCamera.pixelRect.size).x * 2, mainCamera.ScreenToWorldPoint(mainCamera.pixelRect.size).y * 2);
+        background.size = new Vector2(mainCamera.ScreenToWorldPoint(mainCamera.pixelRect.size).x * 2, mainCamera.ScreenToWorldPoint(mainCamera.pixelRect.size).y * 2);
+        levelWalls.localScale = new Vector3(levelScale, levelScale, 1f);
     }
 
     private void PopulateSpawnsLists()

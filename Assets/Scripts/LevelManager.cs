@@ -88,6 +88,7 @@ public class LevelManager : MonoBehaviour
         levelTransition.AnimationState.ClearTracks();
         levelTransition.AnimationState.SetAnimation(0, "animation", false);
         yield return new WaitForSpineEvent(levelTransition.AnimationState, "Scene Change");
+        Debug.Log("anim event called");
         if (SessionManager.GetWins(winningTeam) >= SessionManager.GetRequiredWins())
         {
             levelTransition.freeze = true;
@@ -138,6 +139,7 @@ public class LevelManager : MonoBehaviour
         {
             p.GetComponent<PlayerMovement>().SetCanMove(false);
         }
+        yield return new WaitForSeconds(1f);
         countdown.gameObject.SetActive(true);
         countdown.Skeleton.SetSkin("Ready");
         countdown.AnimationState.SetAnimation(0, "animation", false);
