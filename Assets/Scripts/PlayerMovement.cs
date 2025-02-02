@@ -53,11 +53,6 @@ public class PlayerMovement : MonoBehaviour
     {
         velocityLastFrame = rb.linearVelocity;
     }
-
-    protected void Aim(Vector2 val)
-    {
-        movementDir = val.normalized;
-    }
     public void SetPositionToLastFrame()
     {
         transform.position = positionLastFrame;

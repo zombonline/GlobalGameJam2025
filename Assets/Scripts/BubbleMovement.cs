@@ -18,6 +18,11 @@ public class BubbleMovement : PlayerMovement
             Fire();
         }
     }
+
+    private void Aim(Vector2 val)
+    {
+        movementDir = val.normalized;
+    }
     private void Fire()
     {
         rb.linearVelocity = Vector2.zero;

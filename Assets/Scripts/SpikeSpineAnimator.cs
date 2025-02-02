@@ -23,6 +23,7 @@ public class SpikeSpineAnimator : SpineAnimator
         }
         else if (spikeMovement.GetMoveChargeValue() > 0)
         {
+            if(GetCurrentAnimation(0) == "ChargeSpike S") { return; }
             UpdateState(0, "ChargeSpike S", false);
         }
         else

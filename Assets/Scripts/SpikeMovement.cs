@@ -8,13 +8,14 @@ using UnityEngine.UI;
 public class SpikeMovement : PlayerMovement
 {
     [SerializeField] private float pressLength = 0.5f;
-    [SerializeField] private float moveForce = 50f;
-    [SerializeField] private float partialChargeMovementEffector = 0.5f;
-    private float moveChargeValue = 0f;
+    [SerializeField] private float chargeForce = 50f;
+    [SerializeField] private float partialChargeEffector = 0.5f;
+    private float chargePressValue = 0f;
 
     [SerializeField] private float cooldownBetweenCharges = 1f;
     private float cooldownTimer = 0f;
 
+    [SerializeField] private float moveSpeed = 1f;
 
     [SerializeField] Image chargeImageFill, chargeImageBackground;
     private void Update()
@@ -28,18 +29,25 @@ public class SpikeMovement : PlayerMovement
         }
         if (fire.WasReleasedThisFrame() && cooldownTimer <= 0)
         {
-            if (moveChargeValue > pressLength)
+            if(movementDir == Vector2.zero)
+            {
+                chargePressValue = 0f;
+                chargeImageFill.fillAmount = 0f;
+                return;
+            }
+            if (chargePressValue > pressLength)
             {
                 rb.linearVelocity = Vector2.zero;
-                rb.AddForce(movementDir * moveForce, ForceMode2D.Impulse);
+                rb.AddForce(movementDir * chargeForce, ForceMode2D.Impulse);
             }
             else
             {
-                float partialCharValue = moveChargeValue / pressLength;
+                float partialCharValue = chargePressValue / pressLength;
                 rb.linearVelocity = Vector2.zero;
-                rb.AddForce(movementDir * moveForce * partialChargeMovementEffector * partialCharValue, ForceMode2D.Impulse);
+                rb.AddForce(movementDir * chargeForce * partialChargeEffector * partialCharValue, ForceMode2D.Impulse);
             }
-            moveChargeValue = 0f;
+            chargePressValue = 0f;
+           
             cooldownTimer = cooldownBetweenCharges;
             chargeImageFill.fillAmount = 0f;
         }
@@ -53,15 +61,26 @@ public class SpikeMovement : PlayerMovement
             chargeImageBackground.color = Color.red;
         }
     }
+    private void FixedUpdate()
+    {
+        if (chargePressValue == 0 && cooldownTimer <= 0)
+        {
+            rb.MovePosition(rb.position + movementDir * moveSpeed * Time.fixedDeltaTime);
+        }
+    }
     private void Fire()
     {
-        moveChargeValue += Time.deltaTime;
-        chargeImageFill.fillAmount = moveChargeValue / pressLength;
+        chargePressValue += Time.deltaTime;
+        chargeImageFill.fillAmount = chargePressValue / pressLength;
     }
 
+    private void Aim(Vector2 val)
+    {
+        movementDir = val.normalized;
+    }
     public float GetMoveChargeValue()
     {
-        return moveChargeValue;
+        return chargePressValue;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

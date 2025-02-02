@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class CaptureZone : MonoBehaviour
 {
+    LevelManager levelManager;
+
+
     [SerializeField] private float captureTime = 5f;
     [SerializeField] Team teamToCapture;
     int currentActivePlayers = 0;
     int initialActivePlayers = 0;
     float timer = 0;
-    LevelManager levelManager;
     bool isCaptured = false;
 
     private void Awake()

@@ -42,6 +42,11 @@ public class SpineAnimator: MonoBehaviour
         stateLocked = false;
     }
 
+    public string GetCurrentAnimation(int track)
+    {
+        return skeletonAnimation.AnimationState.GetCurrent(track).Animation.Name;
+    }
+
 
     protected virtual void Update()
     {
