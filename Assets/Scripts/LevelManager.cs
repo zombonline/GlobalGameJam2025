@@ -74,6 +74,12 @@ public class LevelManager : MonoBehaviour
         if (GameObject.FindGameObjectsWithTag(tag).Length > 1) { return; }
         StartCoroutine(LevelOver(tag == "Spike" ? Team.Bubble : Team.Spike));
     }
+
+    public void Win(Team winningTeam)
+    {
+        StartCoroutine(LevelOver(winningTeam));
+    }
+
     private IEnumerator LevelOver(Team winningTeam)
     {
         if (currentLevel.levelComplete) { yield break; }
